@@ -1,0 +1,15 @@
+HTML:
+-head with title and link to stylesheet (doesn't exist)
+-h1 title in header
+-input with button and div to catch result
+
+JS:
+-use DOM to grab input, button, and result div
+-eventlistener on click which runst hte checkPalindrome function on the value in the input
+-checkPalindrome function takes a string, assigns this to a variable to use during the function.
+-checks if the input is empty and alerts if it s. 
+-converst the string to lowercase and uses a regex to elimate any non numeric characters using replace (this works because the regex shows all things we want, putting [^] the carat symbol inside of [] creates a not code similar to !. So this regex matches anything that is not an alphanumeric character and replaces it with an empty string which removes it.)
+
+-this adjusted string is split into an array, reversed, and joined. (the backwards version) stored to alt string
+-created an empty string to catch result and post it to the div. If the forward adjusted string matches the reversed one, the message prints input is a palidrome if it doesn't it prints the opposite, using template literals to catch the input.
+-Final logic creates a p element, assigns its text / html and adds it to the result div.
